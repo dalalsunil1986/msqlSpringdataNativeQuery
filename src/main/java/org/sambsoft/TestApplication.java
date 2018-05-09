@@ -45,9 +45,10 @@ public class TestApplication implements CommandLineRunner {
         System.out.println("===searching settings===");
         userSettingsRepository.findAll().forEach(System.out::println);
 
-        System.out.println("===Role count===");
+        System.out.println("===Printing Role count===");
         Long uniqueEditors = userRoleRepository.countRoles().longValue();
         System.out.println("uniqueEditors" +"=" +uniqueEditors);
+        System.out.println("==Done printing role count====");
         //   userRoleRepository.countRoles().forEach(System.out::println);
         //    System.out.println(userRoleRepository.countRoles().get(userRoleRepository.countRoles().size()-1));
 
