@@ -9,7 +9,7 @@ import javax.persistence.Table;
 @Table(name = "USERROLE")
 public class UserRole {
 
-
+    //some test
     @EmbeddedId
      public  UserRoleId userRoleId;
 
